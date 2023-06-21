@@ -1,0 +1,540 @@
+/*Genel ssayfa yapısı başlangıç*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #201f1f;
+  background-color: azure;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #decba4, #3e5151);
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  text-shadow: 1px 1px #989898;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.background-image {
+  background: #1a2980;
+  background: -webkit-linear-gradient(to right, #26d0ce, #1a2980);
+  background: linear-gradient(to right, #26d0ce, #1a2980);
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-item {
+  margin: 10px 40px;
+}
+
+.menu-item .circle {
+  border: solid 2px #beb555;
+  color: #007bff;
+}
+
+.menu-item .circle:hover {
+  background-color: #ddd;
+  color: rgb(190, 181, 85);
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  display: block;
+  z-index: 2;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(190, 181, 85, 0.4);
+  padding: 17px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+hr {
+  width: 30%;
+  margin: 0 25% 0 35%;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+/*Genel ssayfa yapısı bitiş*/
+
+/*İndex sayfası başlangıç*/
+.my {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 645;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px rgb(153, 152, 152);
+  color: #2f3232;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  border: solid 2px #989898;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.btn-cv {
+  box-shadow: 5px 5px black;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 8px;
+  color: #1a2980;
+  font-weight: bold;
+  background: transparent;
+  font-size: 18px;
+  border: 2px solid #1a2980;
+  text-shadow: 1px 1px #989898;
+}
+
+.btn-cv:hover {
+  padding: 5px;
+  color: #007bff;
+  background-color: #1a2980;
+}
+
+.btn-cv a {
+  text-decoration: none;
+  color: #1a2980;
+}
+
+.btn-cv a:hover {
+  padding: 5px;
+  color: #007bff;
+  background-color: #1a2980;
+}
+
+.btn-cv i {
+  font-size: 20px;
+  text-shadow: 2px 1px #989898;
+}
+
+/*İndex sayfası başlangıç*/
+
+/* Hakkımda sayfası başlangıç */
+.about {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about p i {
+  color: #beb555;
+}
+
+.skills {
+  margin: 50px 0;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+}
+
+.skills li {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer p {
+  color: #3e5151;
+  background-color: #b8b7b7;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #beb555;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+.certificates {
+  margin: 50px 0;
+}
+
+.certificates h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.certificate-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certificate {
+  width: calc(25% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.certificate:last-child {
+  margin-right: 0;
+}
+
+.certificate img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.certificate p {
+  font-size: 18px;
+  margin: 0;
+  color: #ddd;
+}
+
+@media (max-width: 991px) {
+  .certificate-row {
+    flex-direction: column;
+  }
+
+  .certificate {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+.h1-about {
+  text-shadow: 3px 3px #beb555;
+  text-align: center;
+  color: #ddd;
+  font-size: 40px;
+}
+
+.personal-info {
+  margin: 80px 0;
+}
+
+.personal-info li b {
+  font-size: 25px;
+  color: #ddd;
+}
+
+.personal-info h2 {
+  margin-bottom: 20px;
+}
+
+.personal-info ul {
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personal-info .sociai-media {
+  color: #000000 !important;
+  border-radius: 7px;
+  padding: 3px;
+  width: 40%;
+  margin-left: 30% !important;
+}
+
+.personal-info .sociai-media b {
+  color: #000000 !important;
+}
+
+.personal-info li {
+  color: #201f1f;
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 10px;
+  margin: 20px 12px 3px 0px;
+}
+
+.personal-info li strong {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+.personal-info .sociai-media i {
+  border-radius: 50% 50%;
+  padding: 10px;
+  background-color: #ddd;
+  font-size: 30px;
+  vertical-align: middle;
+  color: #1a2980;
+  margin: 3px;
+}
+
+.personal-info .sociai-media i:hover {
+  background-color: #beb555;
+  color: #1a2980;
+}
+
+.timeline-line {
+  font-size: 35px;
+  margin: 20px 20px 20px 20px;
+}
+
+.timeline .container {
+  padding: 40px 70px;
+}
+
+.timeline .left {
+  text-align: left;
+}
+
+.timeline p {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.timeline .right {
+  text-align: right;
+}
+
+.rounded-img {
+  background-color: aliceblue;
+  border-radius: 25% 10%;
+  padding: 18px;
+  box-shadow: 2px 2px 2px 1px #beb555;
+}
+
+.rounded-img i {
+  font-size: 33px;
+  color: #beb555;
+}
+
+.timeline .content p {
+  text-shadow: 1px 1px #000000;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    display: block !important;
+  }
+  .container {
+    width: 100% !important;
+  }
+}
+
+.timeline-h2 {
+  margin-top: 25px;
+  font-size: 23px;
+  text-shadow: 1px 2px #ddd;
+}
+
+.timeline-line i {
+  color: #ddd;
+}
+
+.left-column,
+.right-column {
+  padding: 20px;
+}
+
+.left-column {
+  width: 43%;
+}
+
+.right-column {
+  width: 70%;
+}
+
+.skill-bg {
+  margin: 50px 0;
+}
+/*Hakkımda sayfası bitiş*/
+
+/*İletişim sayfası başlangıç*/
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact .sociai-media i {
+    font-size: 13px !important;
+  }
+
+  .personal-info .sociai-media {
+  }
+
+  .personal-info .sociai-media i {
+    font-size: 18px !important;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .right-column {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .header-img {
+    display: none;
+  }
+}
+
+form input,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #b8b7b7;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: skyblue;
+  color: white;
+  border: none;
+}
+
+.contact {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.contact li b {
+  font-size: 20px;
+  color: #1a2980;
+  text-shadow: 1px 0px #ddd;
+}
+
+.contact li {
+  font-size: 17px;
+  color: #ddd;
+  text-shadow: 1px 1px #4d4d4d;
+  margin: 10px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  text-align: left;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li .sociai-media {
+  color: #000000 !important;
+}
+
+.contact .sociai-media b {
+  color: #000000 !important;
+}
+
+.contact li img {
+  width: 30px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.contact .sociai-media i {
+  border-radius: 50% 50%;
+  padding: 10px;
+  background-color: #1a2980;
+  font-size: 30px;
+  vertical-align: middle;
+  color: #ddd;
+  margin: 3px;
+}
+
+.contact .sociai-media i:hover {
+  color: #000000;
+  background-color: #beb555;
+}
+/*İletişim sayfası bitiş*/
