@@ -15,14 +15,6 @@ body {
   background-color: azure;
 }
 
-.navbar {
-  background-image: linear-gradient(to right, #decba4, #3e5151);
-  color: #fff;
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-
 h1,
 h2,
 h3 {
